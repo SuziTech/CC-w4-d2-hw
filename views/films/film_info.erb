@@ -1,0 +1,10 @@
+    <h1> Film info: </h1>
+
+    <% for film in @films
+          if film.id == @film_id
+            @film = film
+          end
+        end %>
+
+    <h3>Title</h3><%=@film.title%>
+    <h3>Price</h3><%=@film.price%>
