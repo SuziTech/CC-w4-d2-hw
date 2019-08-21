@@ -1,7 +1,13 @@
     <h1> Now showing at Suzanne Cinema </h1>
 
-    <ul><% for film in @films %>
-      <li><a href='/films/<%=film.id%>'>
+    <ul>
+
+      <% for film in @films %>
+      <li>
+        <a href='/films/<%=film.id%>'>
           <%= film.title %>
-      </a></li>
-    <% end %></ul>
+        </a>
+      </li>
+      <% end %>
+
+    </ul>
